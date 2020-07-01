@@ -17,6 +17,8 @@
   "include": [
     "packages/core/src/SlotMixin.js",
     "packages/core/test/SlotMixin.js",
+    "packages/core/src/UpdateStylesMixin.js",
+    "packages/core/test/UpdateStylesMixin.js",
     "packages/tabs/**/*"
   ],
   "exclude": [
