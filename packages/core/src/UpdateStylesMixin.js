@@ -3,7 +3,7 @@ import { dedupeMixin } from '@open-wc/dedupe-mixin';
 
 /**
  * @typedef {import('../types/UpdateStylesMixinTypes').UpdateStylesMixin} UpdateStylesMixin
- * @typedef {import("lit-element").LitElement} LitElement
+ * @typedef {import('../types/UpdateStylesMixinTypes').StylesMap} StylesMap
  */
 
 /** @type {UpdateStylesMixin} */
@@ -25,14 +25,14 @@ const UpdateStylesMixinImplementation = superclass =>
      * IE: <my-element>
      *     => to head: <style>color: #fff</style>
      *
-     * @param {Object.<string, string>} updateStyles
+     * @param {StylesMap} updateStyles
      */
     updateStyles(updateStyles) {
       const styleString = this.getAttribute('style') || this.getAttribute('data-style') || '';
 
       /**
        * reducer function
-       * @param {Object.<string, any>} acc
+       * @param {Object.<string, string>} acc
        * @param {string} stylePair
        */
       const reducer = (acc, stylePair) => {
@@ -52,7 +52,7 @@ const UpdateStylesMixinImplementation = superclass =>
       if (typeof ShadyCSS === 'object' && !ShadyCSS.nativeShadow) {
         // No ShadowDOM => IE, Edge
 
-        /** @type {Object.<string, any>} */
+        /** @type {Object.<string, string>} */
         const newCssVariablesObj = {};
 
         Object.keys(newStyles).forEach(key => {
@@ -75,8 +75,6 @@ const UpdateStylesMixinImplementation = superclass =>
     }
   };
 
-export const UpdateStylesMixin = /** @type {UpdateStylesMixin} */ (dedupeMixin(
-  // not sure how to strict type this 😅
-  // @ts-ignore
-  UpdateStylesMixinImplementation,
-));
+// FIXME: Wait for https://github.com/open-wc/open-wc/pull/1741 so we can get this type issue fixed
+// @ts-ignore
+export const UpdateStylesMixin = dedupeMixin(UpdateStylesMixinImplementation);

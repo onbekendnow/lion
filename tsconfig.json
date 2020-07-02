@@ -13,14 +13,7 @@
     "types": ["node", "mocha"],
     "esModuleInterop": true
   },
-  "files": ["browser.d.ts"],
-  "include": [
-    "packages/core/src/SlotMixin.js",
-    "packages/core/test/SlotMixin.js",
-    "packages/core/src/UpdateStylesMixin.js",
-    "packages/core/test/UpdateStylesMixin.js",
-    "packages/tabs/**/*"
-  ],
+  "include": ["packages/core/**/*.js", "packages/tabs/**/*.js"],
   "exclude": [
     "node_modules",
     "**/node_modules/*",

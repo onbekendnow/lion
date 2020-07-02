@@ -46,8 +46,8 @@ export declare class SlotMixinHost {
  *   };
  * }
  */
-declare function SlotMixinImplementation<T extends Constructor<HTMLElement>>(
+export declare function SlotMixinImplementation<T extends Constructor<HTMLElement>>(
   superclass: T,
-): T & Constructor<SlotMixinHost>;
+): T & SlotMixinHost;
 
 export type SlotMixin = typeof SlotMixinImplementation;

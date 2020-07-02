@@ -1,11 +1,9 @@
 /* eslint-disable class-methods-use-this */
-
 import { dedupeMixin } from '@open-wc/dedupe-mixin';
 
 /**
  * @typedef {import('../types/SlotMixinTypes').SlotMixin} SlotMixin
  * @typedef {import('../types/SlotMixinTypes').SlotsMap} SlotsMap
- * @typedef {import("lit-element").LitElement} LitElement
  */
 
 /** @type {SlotMixin} */
@@ -58,6 +56,6 @@ const SlotMixinImplementation = superclass =>
     }
   };
 
-// not sure how to strict type this 😅
+// FIXME: Wait for https://github.com/open-wc/open-wc/pull/1741 so we can get this type issue fixed
 // @ts-ignore
-export const SlotMixin = /** @type {SlotMixin} */ (dedupeMixin(SlotMixinImplementation));
+export const SlotMixin = dedupeMixin(SlotMixinImplementation);
