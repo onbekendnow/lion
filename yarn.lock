@@ -2497,8 +2497,8 @@
 
 "@open-wc/testing@^2.5.18":
   version "2.5.18"
-  resolved "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@open-wc/testing/-/testing-2.5.18.tgz#b05215535a22515fbd98183eface1c33fd804a5d"
-  integrity sha1-sFIVU1oiUV+9mBg++s4cM/2ASl0=
+  resolved "https://registry.yarnpkg.com/@open-wc/testing/-/testing-2.5.18.tgz#b05215535a22515fbd98183eface1c33fd804a5d"
+  integrity sha512-poFIaGEsHseNEbAE/pGjzZGbSksxqsL4CRr+MSPUEotzhbVa3BzA3JzPHfn3FD1zVGlBcNEU0kFa0jj/Goc52w==
   dependencies:
     "@open-wc/chai-dom-equals" "^0.12.36"
     "@open-wc/semantic-dom-diff" "^0.17.9"
@@ -6335,8 +6335,8 @@ fast-glob@^2.2.6:
 
 fast-glob@^3.1.0:
   version "3.2.4"
-  resolved "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/fast-glob/-/fast-glob-3.2.4.tgz#d20aefbf99579383e7f3cc66529158c9b98554d3"
-  integrity sha1-0grvv5lXk4Pn88xmUpFYybmFVNM=
+  resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.4.tgz#d20aefbf99579383e7f3cc66529158c9b98554d3"
+  integrity sha512-kr/Oo6PX51265qeuCYsyGypiO5uJFgBS0jksyG7FUeCyQzNwYnzrNIMR1NXfkZXsMYXYLRAHgISHBz8gQcxKHQ==
   dependencies:
     "@nodelib/fs.stat" "^2.0.2"
     "@nodelib/fs.walk" "^1.2.3"
@@ -13016,9 +13016,9 @@ typedarray@^0.0.6:
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
 typescript@^3.5.3, typescript@^3.8.3:
-  version "3.9.5"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.5.tgz#586f0dba300cde8be52dd1ac4f7e1009c1b13f36"
-  integrity sha512-hSAifV3k+i6lEoCJ2k6R2Z/rp/H3+8sdmcn5NrS3/3kE7+RyZXm9aqvxWqjEXHAd8b0pShatpcdMTvEdvAJltQ==
+  version "3.9.6"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.6.tgz#8f3e0198a34c3ae17091b35571d3afd31999365a"
+  integrity sha512-Pspx3oKAPJtjNwE92YS05HQoY7z2SFyOpHo9MqJor3BXAGNaPUs83CuVp9VISFkSjyRfiTpmKuAYGJB7S7hOxw==
 
 typical@^4.0.0:
   version "4.0.0"

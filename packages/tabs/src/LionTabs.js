@@ -3,12 +3,12 @@ import { css, html, LitElement } from '@lion/core';
 /**
  * @typedef {Object} StoreEntry
  * @property {HTMLElement} el Dom Element
- * @property {string} [uid] Unique ID for the entry
- * @property {HTMLElement} [button] Unique ID for the entry
- * @property {HTMLElement} [panel] Unique ID for the entry
- * @property {EventHandlerNonNull} clickHandler
- * @property {EventHandlerNonNull} keydownHandler
- * @property {EventHandlerNonNull} keyupHandler
+ * @property {string} uid Unique ID for the entry
+ * @property {HTMLElement} button Button HTMLElement for the entry
+ * @property {HTMLElement} panel Panel HTMLElement for the entry
+ * @property {EventHandlerNonNull} clickHandler executed on click event
+ * @property {EventHandlerNonNull} keydownHandler executed on keydown event
+ * @property {EventHandlerNonNull} keyupHandler executed on keyup event
  */
 
 function uuid() {
@@ -97,7 +97,7 @@ function handleButtonKeydown(ev) {
     case 'ArrowLeft':
     case 'Home':
     case 'End':
-      ev.preventDefault();
+      _ev.preventDefault();
     /* no default */
   }
 }
