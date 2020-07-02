@@ -20,6 +20,6 @@
     "**/coverage/*",
     "**/dist/**/*",
     "packages/**/demo/**/*",
-    "packages/**/test/**/snapshots"
+    "packages/**/test"
   ]
 }
